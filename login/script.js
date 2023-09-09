@@ -2,6 +2,7 @@ let input =document.getElementById('email')
 let password= document.getElementById('password')
 
 
+
  
 input.onblur = function(){
    
@@ -10,11 +11,25 @@ input.onblur = function(){
     
         input.style.color="red";
         alert('@ missing')
+        
     }
     else{
-        input.style.color="#00ABE4"
+        input.style.color="green"
     
     }
 }
+
+password.onblur=function(){
+    if(password==null){
+        alert('enter password');
+        password.style.color="red";
+    }
+    else{
+
+        password.style.color="green"
+
+    }
+}
+
 
 
