@@ -1,106 +1,100 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 
+body {
+    background: #E9F1FA;
+    font-family: 'Poppins', sans-serif;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background:#E9F1FA;
-}
-.wrapper{
-    width: 430px;
-    background: black;
+
+#form {
+    width: 350px;
+    margin: 20vh auto 0 auto;
+    padding: 20px;
+    background-color:black;
+    border-radius: 4px;
+    font-size: 15px;
     color:#00ABE4;
-    border-radius: 10px;
-    padding: 30px 40px;
+    border-radius: 15px;
 }
-.wrapper h1{
-    font-size: 38px;
-    text-align: center;
-    margin: 10px;
-}
-.wrapper .input{
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
 
-}
-.input #email{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    color: #00ABE4;
-    outline:none;
-    border: 2px solid ;
-    border-radius: 40px;
-    padding:25px 40px ;
-}
-.input #password{
-    width: 100%;
-    height: 100%;
-    background: transparent;
-    color: #00ABE4;
-    outline:none;
-    border: 2px solid ;
-    border-radius: 40px;
-    padding:25px 40px ;
-}
-.input input::placeholder{
-    color: #00ABE4;
-}
-.wrapper .rf{
-    display: flex;
-    justify-content: space-between;
-    font-size: 13px;
-    margin: 12px;
-}
-.rf label input{
-    accent-color: red;
-    margin-right: 4px;
-
-}
-.rf a{
-    text-decoration: none;
-    color: red;
-}
-.rf a:hover{
-    text-decoration: underline;
-    color: red;
-    
-}
-.wrapper .btn{
-    width: 100%;
-    height: 45px;
-    background:#00ABE4;
-    border: none;
-    border-radius: 40px;
-    box-shadow: black;
-    cursor: pointer;
-    font-size: 18px;
-    font-weight: 800;
-}
-.wrapper .rl{
-    font-size: 13px;
-    text-align: center;
-    margin-top: 17px;
-}
-.rl p a{
-    text-decoration:none ;
-    color: red;
-}
-.rl p a:hover{
-    text-decoration:underline ;
-}
-.error p{
-
+#form h1 {
     color: wheat;
+    text-align: center;
+}
+
+#form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    background:#00ABE4;
+    color: white;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    
+}
+#form button:hover{
+    background-color: red;;
+}
+
+.input-control {
+    display: flex;
+    flex-direction: column;
+}
+input::placeholder{
+    color:wheat;
+}
+
+.input-control input {
+    border: 2px solid #00ABE4;
+	border-radius: 45px;
+    background: transparent;
+    color: #00ABE4;
+	display: block;
+	font-size: 12px;
+	padding: 10px;
+	width: 95%;
+    margin: 10px 0;
+}
+.check{
+    
+    margin: 5px 0;
+}
+.check a{
+    text-decoration: none;
+    color: #00ABE4;
+    margin-left:60px;
+}
+.check a:hover{
+    color: red;
+    text-decoration: underline;
+}
+.signup{
+    text-align: center;
+}
+.signup a{
+    text-decoration: none;
+    color: #00ABE4;
+}
+.signup a:hover{
+    color: red;
+    text-decoration: underline;
     
 }
 
+.input-control input:focus {
+    outline: 0;
+}
 
+.input-control.success input {
+    border-color: #09c372;
+}
+
+.input-control.error input {
+    border-color: #ff3860;
+}
+
+.input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+}
 
